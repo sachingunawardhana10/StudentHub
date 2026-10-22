@@ -1,56 +1,77 @@
-# Welcome to your Expo app 👋
+# StudentHub – Mobile Application Development Practical 03
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mini student hub built with **React Native** and **Expo Router** for the University of Kelaniya's Mobile Application Development practical tutorial.
 
-## Get started
+The project demonstrates bottom-tab navigation, nested stack navigation, a student dashboard, a digital ID card details screen, and a live-updating clock using `useEffect` and `setInterval`.
 
-1. Install dependencies
+## Learning Objectives
 
-   ```bash
-   npm install
-   ```
+- Set up bottom tabs with a stack navigator nested inside.
+- Use `ScrollView` and `Pressable` to improve the user interface and user experience.
+- Display a local image in a React Native screen.
+- Simulate a periodic background task with a live-updating clock.
 
-2. Start the app
+## Technologies
 
-   ```bash
-   npx expo start
-   ```
+- React Native
+- Expo
+- Expo Router
+- TypeScript / TSX
+- `@expo/vector-icons`
 
-In the output, you'll find options to open the app in a
+## Project Structure
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```text
+StudentHub/
+├── app/
+│   ├── _layout.tsx
+│   ├── clock.tsx
+│   └── (home)/
+│       ├── _layout.tsx
+│       ├── index.tsx
+│       └── details.tsx
+├── assets/
+│   └── images/
+│       └── user.png
+├── Output_Screens/
+└── README.md
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Getting Started
 
-### Other setup steps
+### Prerequisites
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+- Node.js and npm installed.
+- Expo-compatible development environment.
+- Expo Go or an appropriate simulator/device.
 
-## Learn more
+### Install and Run
 
-To learn more about developing your project with Expo, look at the following resources:
+If you have not created the project yet:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npx create-expo-app StudentHub
+cd StudentHub
+npm run reset-project
+npx expo install @expo/vector-icons
+```
 
-## Join the community
+If the project already exists, open a terminal in the project directory and install dependencies as needed:
 
-Join our community of developers creating universal apps.
+```bash
+npm install
+npx expo install @expo/vector-icons
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Start the development server:
+
+```bash
+npx expo start
+```
+
+## Author
+
+- Name: Sachin Gunawardhana
+- Student ID: PS/2022/200
+- Course: Mobile Application Development
+- Practical: Tutorial 03 – Navigation, Components & Background Tasks
